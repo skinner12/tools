@@ -38,6 +38,7 @@ cd $BASE$KERNEL/mkboot
 
 echo -e "Creating ZIP...\n"
 cp $BASE$KERNEL/mkboot/boot.img $BASE$ZIP/boot.img
+cp $BASE$KERNEL/mkboot/zImage $BASE$ZIP/kernel/zImage
 cp $BASE$KERNEL/drivers/scsi/scsi_wait_scan.ko $BASE$ZIP/system/modules/
 7z a -r -tzip $BASE/mykernel-$DATE.zip $BASE$ZIP/*
 

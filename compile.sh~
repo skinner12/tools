@@ -44,6 +44,7 @@ cp $BASE$KERNEL/drivers/scsi/scsi_wait_scan.ko $BASE$ZIP/system/modules/
 #make clean
 
 rm $BASE$ZIP/kernel/zImage
+rm $BASE$KERNEL/mkboot/zImage
 rm $BASE$KERNEL/mkboot/boot.img
 rm $BASE$ZIP/boot.img
 rm $BASE$ZIP/system/modules/scsi_wait_scan.ko
