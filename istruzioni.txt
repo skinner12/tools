@@ -1,0 +1,21 @@
+git init
+
+git remote add origin https://github.com/skinner12/test.git //Crea link con github nel reposity con abbreviazione 'origin'
+
+git branch istruzioni //Crea branch con nome 'istruzioni'
+
+git add . //Aggiunge tutti i files al repo
+
+git commit -a //Aggiunge i commenti ai files modificati
+
+git push origin istruzioni //Manda i files al branch 'istruzioni'
+
+
+
+
+
+
+
+git status //Stampa i files modificati
+
+git checkout istruzioni //Seleziona il branch 'istruzioni'
