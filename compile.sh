@@ -41,7 +41,9 @@ cp $BASE$KERNEL/mkboot/boot.img $BASE$ZIP/boot.img
 cp $BASE$KERNEL/drivers/scsi/scsi_wait_scan.ko $BASE$ZIP/system/modules/
 7z a -r -tzip $BASE/mykernel-$DATE.zip $BASE$ZIP/*
 
-make clean
-rm -rfv $BASE$KERNEL/mkboot/boot.img
-rm -rfv $BASE$ZIP/boot.img
-rm -rfv $BASE$ZIP/system/modules/scsi_wait_scan.ko
+#make clean
+
+rm $BASE$ZIP/kernel/zImage
+rm $BASE$KERNEL/mkboot/boot.img
+rm $BASE$ZIP/boot.img
+rm $BASE$ZIP/system/modules/scsi_wait_scan.ko
