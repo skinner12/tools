@@ -1,7 +1,7 @@
 #!/bin/sh
 
 BASE=/home/tux/apps/nexus/
-KERNEL=kernel/marmite
+KERNEL=kernel/SkeRneL
 ZIP=zipKernel
 DATE=$(date +"%Y%m%d%H%M")
 
@@ -18,14 +18,14 @@ if [[ ! $REPLY =~ ^[Yy]$ ]]
 
 echo -e "\nSTARTING...\n"
 
-export PATH=$PATH:/home/tux/apps/nexus/toolchain/ZenKernel_ARCH_armv7a_compiler/bin/
 #export PATH=$PATH:/home/tux/apps/nexus/toolchain/arm-2012.09/bin/
+export PATH=$PATH:/home/tux/apps/nexus/toolchain/ZenKernel_ARCH_armv7a_compiler/bin/
 export ARCH=arm
 export SUBARCH=arm
 export CROSS_COMPILE=arm-zen-linux-gnueabi-
 #export CROSS COMPILE=arm-none-eabi-
 
-#cp arch/arm/configs/crespo_dave_config ./.config
+
 make -j4
 
 echo -e "Checking result...\n"
