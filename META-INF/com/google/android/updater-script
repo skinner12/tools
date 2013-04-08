@@ -1,5 +1,5 @@
 ui_print("SkiNNeRl for Nexus S");
-ui_print("Extracting System Files...via koush's anykernel");
+ui_print("Extracting System Files...");
 set_progress(1.000000);
 mount("ext4", "EMMC", "/dev/block/platform/s3c-sdhci.0/by-name/system", "/system");
 package_extract_dir("system", "/system");
@@ -30,21 +30,14 @@ ui_print("");
 ui_print("");
 ui_print("");
 ui_print("");
-ui_print("*****   ****   ****  *     *");
-ui_print("*    * *    * *    * **   **");
-ui_print("*    * *    * *    * * * * *");
-ui_print("*    * *    * *    * *  *  *");
-ui_print("*****  *    * *    * *     *");
-ui_print("*    * *    * *    * *     *");
-ui_print("*    * *    * *    * *     *");
-ui_print("*    * *    * *    * *     *");
-ui_print("*****   ****   ****  *     *");
+ui_print("      |  /      _ \             |");
+ui_print("  __| ' /  _ \ |   | __ \   _ \ |");
+ui_print("\__ \ . \  __/ __ <  |   |  __/ |");
+ui_print("____/_|\_\___|_| \_\_|  _|\___|_|");
 ui_print("");
-ui_print("System successfully corrupted.");
-ui_print("Please freak out now.");
+ui_print("Try if all works.");
+ui_print("ALERT: All system erased.");
 run_program("/sbin/e2fsck", "-p", "/dev/block/mmcblk0p1");
 run_program("/sbin/e2fsck", "-p", "/dev/block/mmcblk0p2");
 run_program("/sbin/e2fsck", "-y", "/dev/block/mmcblk0p1");
 run_program("/sbin/e2fsck", "-y", "/dev/block/mmcblk0p2");
-
-
