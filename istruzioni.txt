@@ -8,6 +8,8 @@ git add . //Aggiunge tutti i files al repo
 
 git commit -a //Aggiunge i commenti ai files modificati
 
+git config pack.depth 0
+
 git push origin istruzioni //Manda i files al branch 'istruzioni'
 
 
